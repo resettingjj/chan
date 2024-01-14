@@ -168,7 +168,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   agentPrefab: {fileID: 2883146724416494779, guid: 055bdccacb97c5744bcf6d7010eb11df, type: 3}
-  behaviour: {fileID: 11400000, guid: 66938adf30cc48c4fa914132f38fc384, type: 2}
+  behaviour: {fileID: 11400000, guid: 7a6057ca6a39d124eb6bc51946946b64, type: 2}
   startingCount: 250
   driveFactor: 10
   maxspeed: 5
@@ -210,7 +210,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0.2264151, g: 0.2264151, b: 0.2264151, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -235,7 +235,7 @@ Camera:
   far clip plane: 100
   field of view: 60
   orthographic: 1
-  orthographic size: 4.47
+  orthographic size: 26.88
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -260,7 +260,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -1.67}
+  m_LocalPosition: {x: 0, y: 0, z: -100}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

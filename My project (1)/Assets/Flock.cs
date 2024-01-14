@@ -14,9 +14,9 @@ public class Flock : MonoBehaviour
     const float AgentDensity = 0.08f;
 
     [Range(1f, 100f)]
-    public float driveFactor = 10f;
+    public float driveFactor = 20f;
     [Range(1f, 100f)]
-    public float maxspeed = 5f;
+    public float maxspeed = 20f;
     [Range(1f, 10f)]
     public float neighborRadius = 1.5f;
     [Range(0f, 1f)]

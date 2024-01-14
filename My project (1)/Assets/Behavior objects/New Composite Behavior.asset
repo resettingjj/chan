@@ -12,5 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ddbaee01932a87b47afe07ef9c0d9141, type: 3}
   m_Name: New Composite Behavior
   m_EditorClassIdentifier: 
-  behaviors: []
-  weights: []
+  behaviors:
+  - {fileID: 11400000, guid: 2fcc187fade4131489c75280005053f0, type: 2}
+  - {fileID: 11400000, guid: 5ac9795afb35b5546aa8a242adbd0863, type: 2}
+  - {fileID: 11400000, guid: 3c3058352a5d86542875dfd359460baa, type: 2}
+  - {fileID: 11400000, guid: 15f53cef0c2191a489e581e70b220d07, type: 2}
+  weights:
+  - 1
+  - 33
+  - 12
+  - 3
