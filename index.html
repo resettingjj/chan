@@ -9,9 +9,26 @@
     
   </head>
   <body>
+    <h1 style="text-align:center">Unity로 Flock 알고리즘 구현</h1>
+    <div id="unity-container" class="unity-desktop">
+      
+      <canvas id="unity-canvas" width=960 height=600 tabindex="-1"></canvas>
+      <div id="unity-loading-bar">
+        <div id="unity-logo"></div>
+        <div id="unity-progress-bar-empty">
+          <div id="unity-progress-bar-full"></div>
+        </div>
+      </div>
+      <div id="unity-warning"> </div>
+      <div id="unity-footer">
+        <div id="unity-webgl-logo"></div>
+        <div id="unity-fullscreen-button"></div>
+        <div id="unity-build-title">My project (1)</div>
+        
+      </div>
+    </div>
 
-    <div>
-      <h2>unity로 Flock 알고리즘 구현</h2>
+    <div id = "description">
       <p>유니티를 처음 사용해보며, C#기초를 다지고 유니티의 기능들을 알기 위해 처음 제작한 프로젝트인
       <b>Flocking Algorithm</b>(군집 알고리즘)이다. <br>오브젝트를 조종하는 기본적인 방법과 유니티 엔진의 작동 방식, 
       오브젝트에 코드를 삽입하여 작동시키는 방법, 코드를 묶고 클래스를 받아오는 방법 등을 활용하는 법,<br>유니티의 에디터 기능을 사용하여 버튼을 직접 만들고 유니티 개발 환경을 바꾸는 법 등을 배웠다.<br>
@@ -33,24 +50,10 @@
         단순한 세가지 알고리즘으로 만들어진 이 군집은 새 떼나 물고기 떼등을 시뮬레이션 하거나, 박쥐 떼가 날아다니는 영상,<br>
         소셜 네트워크에서 의견의 흐름을 시뮬레이션해서 미래 의견을 예측하거나 분산 시스템등에서 이용되는 등 여러 방면으로 사용되는 알고리즘이다.
       
-      <br><br> 참고한 영상 : <a href = "https://www.youtube.com/watch?v=i_XinoVBqt8">https://www.youtube.com/watch?v=i_XinoVBqt8</a>
+      <br><br> 참고한영상 : <a href = "https://www.youtube.com/watch?v=i_XinoVBqt8">https://www.youtube.com/watch?v=i_XinoVBqt8</a>
       </p>
     </div>
-    <div id="unity-container" class="unity-desktop">
-      <canvas id="unity-canvas" width=960 height=600 tabindex="-1"></canvas>
-      <div id="unity-loading-bar">
-        <div id="unity-logo"></div>
-        <div id="unity-progress-bar-empty">
-          <div id="unity-progress-bar-full"></div>
-        </div>
-      </div>
-      <div id="unity-warning"> </div>
-      <div id="unity-footer">
-        <div id="unity-webgl-logo"></div>
-        <div id="unity-fullscreen-button"></div>
-        <div id="unity-build-title">My project (1)</div>
-      </div>
-    </div>
+    
     <script>
 
       var container = document.querySelector("#unity-container");
