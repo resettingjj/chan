@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class Flock : MonoBehaviour
 {
+    public Transform player;
     public Flock1 agentPrefab;
     List<Flock1> agents = new List<Flock1>();
     public FlockBehaviourScript behaviour;
@@ -46,10 +47,11 @@ public class Flock : MonoBehaviour
             agents.Add(newAgent);
         }
     }
-
+    public StayinRadiusBehavior srb;
     // Update is called once per frame
     void Update()
     {
+      srb.player = (Vector2)player.position;
       foreach (Flock1 agent in agents)
       {
             List<Transform> context = getNearbyObjects(agent);
