@@ -14,3 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   center: {x: 0, y: 0}
   radius: 37.9
+  position: {x: 4.03, y: 0}
+  player: {x: -47.293125, y: 16.19294}

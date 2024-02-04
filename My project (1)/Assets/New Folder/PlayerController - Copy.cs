@@ -22,10 +22,22 @@ public class PlayerController : MonoBehaviour
         movementX = movemantVector.x;
         movementY = movemantVector.y;
     }
-
+    private void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawWireSphere(Vector3.zero, 75f);
+    }
     void FixedUpdate()
     {
         Vector2 movement = new Vector2(movementX, movementY);
-        rb.AddForce(movement * speed);
+        Vector2 c = (Vector2)this.transform.position + (movement * speed);
+        if (transform.position.magnitude > 35)
+        {
+            rb.AddForce(-transform.position * speed);
+        }
+        else
+        {
+            rb.AddForce(movement * speed);
+        }
     }
 }
