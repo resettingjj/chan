@@ -3,6 +3,8 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using Unity.Jobs;
+using UnityEngine.Jobs;
 
 public class Flock : MonoBehaviour
 {
@@ -50,27 +52,35 @@ public class Flock : MonoBehaviour
     }
     public StayinRadiusBehavior srb;
     // Update is called once per frame
+
+
+    /*public struct Myjob : IJobParallelForTransform
+    {
+        public void Execute(agents)
+        {
+        }
+    }*/
     void Update()
     {
         srb.player = (Vector2)player.position;
-        foreach (Flock1 agent in agents)
+        foreach (Flock1 agent in agents)//모든 agent에 실행
         {
-            List<Transform> context = getNearbyObjects(agent);
-            agent.GetComponentInChildren<SpriteRenderer>().color = Color.Lerp(Color.white, Color.red, context.Count / 6f);
-            Vector2 move = behaviour.CalculateMove(agent, context, this);
-            move *= driveFactor;
+            List<Transform> context = getNearbyObjects(agent);//agent 사용
+            agent.GetComponentInChildren<SpriteRenderer>().color = Color.Lerp(Color.white, Color.red, context.Count / 6f);//agent 사용
+            Vector2 move = behaviour.CalculateMove(agent, context, this);//agent 사용
+            move *= driveFactor;//가속도? 추진력?
             if (move.sqrMagnitude > squareMaxspeed)
             {
-                move = move.normalized * maxspeed;
+                move = move.normalized * maxspeed;//속도 제한
             }
-            agent.Move(move);
-            Vector2 PlayerAvoid = srb.player - (Vector2)agent.transform.position;
+            agent.Move(move);//agent 사용
+            Vector2 PlayerAvoid = srb.player - (Vector2)agent.transform.position;//사용
             float c = PlayerAvoid.magnitude / 38;
             if (c < 0.03f)
             {
                 agent.gameObject.SetActive(false);
                 Destroy(agent);
-            }
+            }//공에 닿으면 죽음
         }
     }
 
