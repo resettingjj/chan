@@ -1,21 +1,22 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Collections.LowLevel.Unsafe;
 using UnityEngine;
 
 [CreateAssetMenu(menuName = "Flock/Behavior/Aligament")]
 public class AligamentBehaviour : FlockBehaviourScript
 {
-    public override Vector2 CalculateMove(Flock1 agent, List<Transform> context, Flock flock)
+    public override Vector2 CalculateMove(Vector2 agentPos, UnsafeList<Vector2> context, Flock flock, Vector2 velocity)
     {
-        if (context.Count == 0)
-            return agent.transform.up;
+        if (context.Length == 0)
+            return velocity;
 
         Vector2 AligamentMove = Vector2.zero;
-        foreach (Transform item in context)
+        foreach (Vector2 pos in context)
         {
-            AligamentMove += (Vector2)item.transform.up;
+            AligamentMove += velocity;
         }
-        AligamentMove /= context.Count;
+        AligamentMove /= context.Length;
 
         return AligamentMove;
     }

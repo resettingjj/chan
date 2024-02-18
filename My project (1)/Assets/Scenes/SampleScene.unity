@@ -167,15 +167,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb1c8a6dd2cee224ea4cfd5a5e94f3cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 1807201036}
   agentPrefab: {fileID: 2883146724416494779, guid: 055bdccacb97c5744bcf6d7010eb11df, type: 3}
   behaviour: {fileID: 11400000, guid: 7a6057ca6a39d124eb6bc51946946b64, type: 2}
-  startingCount: 250
-  driveFactor: 10
-  maxspeed: 5
   neighborRadius: 1.5
+  player: {fileID: 1807201036}
+  startingCount: 250
+  maxSpeed: 20
+  driveFactor: 20
+  squareAvoidanceRadius: 1.5
   avoidanceRaidiusMultipilter: 0.5
-  srb: {fileID: 11400000, guid: 15f53cef0c2191a489e581e70b220d07, type: 2}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0

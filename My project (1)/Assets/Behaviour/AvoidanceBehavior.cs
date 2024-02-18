@@ -1,23 +1,24 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Collections.LowLevel.Unsafe;
 using UnityEngine;
 
 [CreateAssetMenu(menuName = "Flock/Behavior/Avoidance")]
 public class AvoidanceBehavior : FlockBehaviourScript
 {
-    public override Vector2 CalculateMove(Flock1 agent, List<Transform> context, Flock flock)
+    public override Vector2 CalculateMove(Vector2 agentPos, UnsafeList<Vector2> context, Flock flock, Vector2 velocity)
     {
-        if (context.Count == 0)
+        if (context.Length == 0)
             return Vector2.zero;
 
         Vector2 AvoidanceMove = Vector2.zero;
         int nAvoid = 0;
-        foreach (Transform item in context)
+        foreach (Vector2 pos in context)
         {
-            if (Vector2.SqrMagnitude(item.position - agent.transform.position) < flock.SquareAvoidanceRadius)
+            if (Vector2.SqrMagnitude(pos - agentPos) < flock.squareAvoidanceRadius)
             {
                 nAvoid++;
-                AvoidanceMove += (Vector2)(agent.transform.position - item.position);
+                AvoidanceMove += (agentPos - pos);
             }
         }
         if (nAvoid > 0)
