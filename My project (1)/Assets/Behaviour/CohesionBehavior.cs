@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Unity.Collections.LowLevel.Unsafe;
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "Flock/Behavior/Cohesion")]
+/*[CreateAssetMenu(menuName = "Flock/Behavior/Cohesion")]
 public class CohesionBehavior : FlockBehaviourScript
 {
     public override Vector2 CalculateMove(Vector2 agentPos, UnsafeList<Vector2> context, Flock flock, Vector2 velocity)
@@ -24,4 +24,4 @@ public class CohesionBehavior : FlockBehaviourScript
 
     // Start is called before the first frame update
 
-}
+}*/

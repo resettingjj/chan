@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Unity.Collections.LowLevel.Unsafe;
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "Flock/Behavior/Avoidance")]
+/*[CreateAssetMenu(menuName = "Flock/Behavior/Avoidance")]
 public class AvoidanceBehavior : FlockBehaviourScript
 {
     public override Vector2 CalculateMove(Vector2 agentPos, UnsafeList<Vector2> context, Flock flock, Vector2 velocity)
@@ -25,4 +25,4 @@ public class AvoidanceBehavior : FlockBehaviourScript
             AvoidanceMove /= nAvoid;
         return AvoidanceMove;
     }
-}
+}*/

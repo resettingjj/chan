@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
 
-[CustomEditor(typeof(CompositeBehavior))]
+/*[CustomEditor(typeof(CompositeBehavior))]
 public class CompositeBehaviorEditor : Editor
 {
     public override void OnInspectorGUI()
@@ -110,4 +110,4 @@ public class CompositeBehaviorEditor : Editor
         cb.weights = newWeights;
 
     }
-}
+}*/

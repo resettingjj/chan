@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Unity.Collections;
 using Unity.Collections.LowLevel.Unsafe;
-[CreateAssetMenu(menuName = "Flock/Behavior/Composite")]
+/*[CreateAssetMenu(menuName = "Flock/Behavior/Composite")]
 public class CompositeBehavior : FlockBehaviourScript
 {
     public FlockBehaviourScript[] behaviors;
@@ -37,7 +37,7 @@ public class CompositeBehavior : FlockBehaviourScript
             }
         }
         return move;
-    }
+    }*/
 
 
 
@@ -67,4 +67,4 @@ public class CompositeBehavior : FlockBehaviourScript
     //    }
     //    return move;
     //}
-}
+//}

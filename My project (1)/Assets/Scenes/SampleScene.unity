@@ -168,14 +168,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   agentPrefab: {fileID: 2883146724416494779, guid: 055bdccacb97c5744bcf6d7010eb11df, type: 3}
-  behaviour: {fileID: 11400000, guid: 7a6057ca6a39d124eb6bc51946946b64, type: 2}
-  neighborRadius: 1.5
+  neighborRadius: 1.6
   player: {fileID: 1807201036}
   startingCount: 250
-  maxSpeed: 20
+  maxSpeed: 7.74
+  Ali: 1.44
+  coh: 1.83
+  rad: 100
+  avoid: 3
   driveFactor: 20
-  squareAvoidanceRadius: 1.5
-  avoidanceRaidiusMultipilter: 0.5
+  squareAvoidanceRadius: 4.7
+  avoidanceRaidiusMultipilter: 0.6
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -464,7 +467,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!136 &1599584211
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -547,7 +550,7 @@ Transform:
   m_GameObject: {fileID: 1599584210}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.3073514, y: 19.499065, z: 10.192441}
+  m_LocalPosition: {x: -1.93, y: 19.499065, z: 18.92}
   m_LocalScale: {x: 9.13, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

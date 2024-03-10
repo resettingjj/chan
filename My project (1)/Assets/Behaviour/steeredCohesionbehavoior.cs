@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "Flock/Behavior/Steered Cohesion")]
+/*[CreateAssetMenu(menuName = "Flock/Behavior/Steered Cohesion")]
 public class SteeredCohesionBehavior : FlockBehaviourScript
 {
 
@@ -29,4 +29,4 @@ public class SteeredCohesionBehavior : FlockBehaviourScript
 
     // Start is called before the first frame update
 
-}
+}*/
